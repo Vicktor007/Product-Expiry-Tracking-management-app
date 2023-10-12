@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
+import Card from './components/utilities/Card';
+import FormGroup from './components/utilities/FormGroup';
+import Modal from './components/utilities/Modal';
+import Title from './components/utilities/Title';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Title/> */}
+     {/* <Button/> */}
+     {/* <Modal/> */}
+     {/* <Card/> */}
+     <FormGroup label={"Full name"}/>
     </div>
   );
 }
