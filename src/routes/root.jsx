@@ -3,8 +3,8 @@ import { Outlet, NavLink } from 'react-router-dom'
 
 export default function Root() {
   return (
-    <div className='App container mt-4 p-1 d-flex shadow'>
-        <nav className="navbar bg-accept text-light mb-3">
+    <div className=' container mt-4 p-1 d-flex shadow border'>
+        <nav className="navbar bg-accept text-light index">
         <ul className="navbar-nav me-auto">
         <NavLink
               to={`/home/`}

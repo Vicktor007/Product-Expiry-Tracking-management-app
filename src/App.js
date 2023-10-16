@@ -1,5 +1,5 @@
 import './App.css';
-import Button from './components/Button';
+import Button from './components/utilities/Button';
 import Card from './components/utilities/Card';
 import FormGroup from './components/utilities/FormGroup';
 import Modal from './components/utilities/Modal';

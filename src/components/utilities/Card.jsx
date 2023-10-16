@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button'
+import Button from './Button'
 
 export default function Card({ title= "Title", text="text", children, icon_1, icon_2, icon_3,
 btnIcon, startEvent, cardHeader = true, cardBody = true, cardFooter = true
