@@ -5,8 +5,8 @@
     "last_name": "Doe",
     "date_of_birth": "1990-01-01",
     "yearly_leave_days": 30,
-    "requested_leave_days": 0,
-    "remaining_leave_days": 0
+    "requested_leave_days": 10,
+    "remaining_leave_days": 20
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "last_name": "Doe",
     "date_of_birth": "1995-05-05",
     "yearly_leave_days": 30,
-    "requested_leave_days": 0,
-    "remaining_leave_days": 0
+    "requested_leave_days": 18,
+    "remaining_leave_days": 12
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "last_name": "Man",
     "date_of_birth": "1995-05-05",
     "yearly_leave_days": 30,
-    "requested_leave_days": 0,
-    "remaining_leave_days": 0
+    "requested_leave_days": 20,
+    "remaining_leave_days": 10
   },
   {
     "id": 4,

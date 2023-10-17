@@ -22,7 +22,7 @@ export default function Personnel() {
   };
   return (
     <PageWrapper className="animate-left">
-      <Title text="Personal" />
+      <Title text="Personnel" />
       <div className="d-flex" style={{ gap: 30 }}>
         <PersonnelList
           // personal={personaDetails}

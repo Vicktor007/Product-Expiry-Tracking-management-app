@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function PersonalDetails({ selectedPerson }) {
-  const { first_name, last_name, date_of_birth, yearly_leave_days } =
+  const { first_name, last_name, date_of_birth, yearly_leave_days, requested_leave_days, remaining_leave_days } =
     selectedPerson;
   return (
     <section>
@@ -14,8 +14,8 @@ export default function PersonalDetails({ selectedPerson }) {
           <p>Date of birth: {date_of_birth}</p>
           <p>Age: {calculateAge(date_of_birth)}</p>
           <p>Total leave days: {yearly_leave_days}</p>
-          <p>Requested leave days:</p>
-          <p>Remaining leave days:</p>
+          <p>Requested leave days:{requested_leave_days}</p>
+          <p>Remaining leave days:{remaining_leave_days}</p>
         </div>
       </div>
     </section>

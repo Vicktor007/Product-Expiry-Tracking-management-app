@@ -4,7 +4,7 @@ import { Outlet, NavLink } from "react-router-dom";
 export default function Root() {
   const authenticator = useContext(AuthenticationContext);
   return (
-    <div className="App container d-flex shadow border">
+    <div className="container d-flex shadow border">
       <nav className="navbar bg-accept text-light index border">
         <ul className="navbar-nav me-auto border">
           <NavLink
