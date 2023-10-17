@@ -35,13 +35,13 @@ export default function LoginForm() {
   };
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log("Login");
+    console.log("Logged in");
     // context
 
     authenticator.login(auth.email, auth.password);
     clearForm();
     if (authenticator.isAuthenticated === false) {
-      console.log("animation");
+      // console.log("animation");
       setAnimateAccessDenied(true);
       setTimeout(() => {
         setAnimateAccessDenied(false);
@@ -57,7 +57,7 @@ export default function LoginForm() {
 
   return (
     <div className="form">
-      <h2 className="mb-2">Enter your credentials</h2>
+      <h2 className="mb-2">Enter your Login details</h2>
       <LoginStyle className={animateAccessDenied && "active"}>
         <FormGroup
           label={"Email"}

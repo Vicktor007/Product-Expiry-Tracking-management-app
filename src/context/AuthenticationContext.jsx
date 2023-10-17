@@ -18,7 +18,7 @@ export default function AuthenticationProvider({ children }) {
     setIsAuthenticated(true);
   };
   const logout = () => {
-    console.log("Logout");
+    console.log("Logged out");
     setIsAuthenticated(false);
   };
 

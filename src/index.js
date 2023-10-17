@@ -15,6 +15,9 @@ import Contact from './routes/contact';
 import Personnel from './routes/Personnel';
 import Login from './routes/Login';
 
+// contexts
+import AuthenticationProvider from './context/AuthenticationContext';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,8 +56,10 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <AuthenticationProvider>
+    <React.StrictMode>
     {/* <App /> */}
     <RouterProvider router={router}/>
   </React.StrictMode>
+  </AuthenticationProvider>
 );
