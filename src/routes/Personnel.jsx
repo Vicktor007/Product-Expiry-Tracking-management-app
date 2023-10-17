@@ -5,7 +5,7 @@ import PersonnelList from "../components/personnel/PersonnelList";
 import data from "../db/personnel-data.json";
 import PersonnelDetails from "../components/personnel/PersonnelDetails";
 export default function Personnel() {
-  const [personaDetails, setPersonalDetails] = useState(data);
+  // const [personaDetails, setPersonalDetails] = useState(data);
   const [searchPerson, setSearchPerson] = useState("");
   const [selectedPerson, setSelectedPerson] = useState(null);
   const searchName = (e) => {

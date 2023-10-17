@@ -5,7 +5,7 @@ import Footer from '../components/pages/Footer'
 
 export default function About() {
   return (
-    <PageWrapper className='container animate-left'>
+    <PageWrapper className='container animate-left f-column border'>
       <Title text="About"/>
       <h3>
         Welcome to the employee payroll management App. This application is
@@ -33,7 +33,7 @@ export default function About() {
       {/* <footer className="mt-4 text-center">
         {" "}
         <a href="#">v1.01</a> */}
-      <Footer/>
+      <Footer classes={"footer-position"}/>
     </PageWrapper>
   )
 }

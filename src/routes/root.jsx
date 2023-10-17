@@ -4,9 +4,9 @@ import { Outlet, NavLink } from "react-router-dom";
 export default function Root() {
   const authenticator = useContext(AuthenticationContext);
   return (
-    <div className="App container mt-4 p-1 d-flex shadow">
-      <nav className="navbar bg-accept text-light index">
-        <ul className="navbar-nav me-auto">
+    <div className="App container d-flex shadow border">
+      <nav className="navbar bg-accept text-light index border">
+        <ul className="navbar-nav me-auto border">
           <NavLink
             to={`/home/`}
             className={({ isActive }) =>
