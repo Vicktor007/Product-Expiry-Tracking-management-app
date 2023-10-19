@@ -9,7 +9,7 @@ export default function PersonalDetails({ selectedPerson }) {
         {first_name} {last_name}
       </h2>
       <div className="card">
-        <h2 className="fs-md">Personal details</h2>
+        <h2 className="fs-md">Personnel details</h2>
         <div className="card-text">
           <p>Date of birth: {date_of_birth}</p>
           <p>Age: {calculateAge(date_of_birth)}</p>

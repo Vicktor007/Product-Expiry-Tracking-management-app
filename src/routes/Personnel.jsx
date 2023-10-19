@@ -13,7 +13,7 @@ export default function Personnel() {
   };
 
   const filteredNames = data.filter((person) =>
-    `${person.first_name} ${person.first_name}`
+    `${person.first_name} ${person.last_name}`
       .toLowerCase()
       .includes(searchPerson.toLowerCase())
   );
