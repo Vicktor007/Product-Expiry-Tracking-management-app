@@ -5,7 +5,7 @@ import PersonnelList from "../components/personnel/PersonnelList";
 import data from "../db/personnel-data.json";
 import PersonnelDetails from "../components/personnel/PersonnelDetails";
 export default function Personnel() {
-  // const [personaDetails, setPersonalDetails] = useState(data);
+  // const [personneDetails, setPersonnelDetails] = useState(data);
   const [searchPerson, setSearchPerson] = useState("");
   const [selectedPerson, setSelectedPerson] = useState(null);
   const searchName = (e) => {
@@ -25,7 +25,7 @@ export default function Personnel() {
       <Title text="Personnel" />
       <div className="d-flex" style={{ gap: 30 }}>
         <PersonnelList
-          // personal={personaDetails}
+          // personnel={personnelDetails}
           personnel={filteredNames}
           searchName={searchName}
           handlePersonClick={displaySelectedPerson}
