@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 import { PageWrapper } from "../components/styles/PageWrapper";
 import Title from "../components/utilities/Title";
-import PersonnelList from "../components/personnel/PersonnelList";
+import ProductList from "../components/product/ProductList";
 import data from "../db/personnel-data.json";
-import PersonnelDetails from "../components/personnel/PersonnelDetails";
-export default function Personnel() {
-  // const [personneDetails, setPersonnelDetails] = useState(data);
-  const [searchPerson, setSearchPerson] = useState("");
-  const [selectedPerson, setSelectedPerson] = useState(null);
+import ProductDetails from "../components/product/ProductDetails";
+export default function Product() {
+  // const [personneDetails, setProductDetails] = useState(data);
+  const [searchProduct, setsearchProduct] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const searchName = (e) => {
-    setSearchPerson(e.target.value);
+    setsearchProduct(e.target.value);
   };
 
-  const filteredNames = data.filter((person) =>
-    `${person.first_name} ${person.last_name}`
+  const filteredNames = data.filter((product) =>
+    `${product.product_name} ${product.product_category}`
       .toLowerCase()
-      .includes(searchPerson.toLowerCase())
+      .includes(searchProduct.toLowerCase())
   );
-  const displaySelectedPerson = (person) => {
-    setSelectedPerson(person);
+  const displaySelectedProduct = (person) => {
+    setSelectedProduct(person);
   };
   return (
     <PageWrapper className="animate-left">
-      <Title text="Personnel" />
+      <Title text="Product" />
       <div className="d-flex" style={{ gap: 30 }}>
-        <PersonnelList
-          // personnel={personnelDetails}
-          personnel={filteredNames}
+        <ProductList
+          // Product={ProductDetails}
+          Product={filteredNames}
           searchName={searchName}
-          handlePersonClick={displaySelectedPerson}
+          handlePersonClick={displaySelectedProduct}
         />
-        {selectedPerson && <PersonnelDetails selectedPerson={selectedPerson} />}
+        {selectedProduct && <ProductDetails selectedProduct={selectedProduct} />}
       </div>
     </PageWrapper>
   );
