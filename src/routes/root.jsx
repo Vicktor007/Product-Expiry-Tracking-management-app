@@ -33,12 +33,12 @@ export default function Root() {
           </NavLink>{" "}
           {authenticator.isAuthenticated && (
             <NavLink
-              to={`/Products/`}
+              to={`/products/`}
               className={({ isActive }) =>
                 isActive ? "nav-item active" : "nav-item"
               }
             >
-              Personnel
+              Products
             </NavLink>
           )}
           {authenticator.isAuthenticated && (
