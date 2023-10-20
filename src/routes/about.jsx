@@ -8,31 +8,26 @@ export default function About() {
     <PageWrapper className='container animate-left f-column border'>
       <Title text="About"/>
       <h3>
-        Welcome to the employee payroll management App. This application is
-        designed to help you manage all payrolls for your employees.
+        Welcome to the product expiry tracker management App. This application is
+        designed to help you manage and track product expiry date for business products.
       </h3>
       <ol className="text-primary">
         <li>
-          The employee payroll management app is a comprehensive solution for
-          businesses of all sizes to manage their employee payroll and related
-          tasks efficiently.
+          The product expiry tracker management App is a comprehensive solution for
+          businesses of all sizes to manage their products and related
+          produces efficiently.
         </li>
         <li>
           {" "}
-          The app allows employers to easily calculate and process employee
-          salaries, bonuses, and other compensation, while also providing
-          employees with access to their pay stubs and other important
-          information.
+          The app allows employers to easily calculate and process Product manufactured date and expiry date, while also providing
+          information about the total shelflife, used shelflife, and the remaining shelflife of the products they have in storage.
         </li>
         <li>
-          With built-in tax and compliance features, the app ensures that
-          businesses stay up-to-date with the latest regulations and avoid
-          costly penalties.
+          With built-in date tracking features, the app ensures that
+          businesses stay up-to-date with the products shelflife to avoid
+          bad customer service.
         </li>
       </ol>
-      {/* <footer className="mt-4 text-center">
-        {" "}
-        <a href="#">v1.01</a> */}
       <Footer classes={"footer-position"}/>
     </PageWrapper>
   )

@@ -38,17 +38,19 @@ export default function ProductDetails({ selectedProduct }) {
   
   return (
     <section>
-      <h2 className="alert alert-accept ">
-        {product_name} {product_category}
-      </h2>
+      <div className="d-flex alert alert-accept fs-xl">
+       <p>Name: <span className="fs-lg">{product_name}</span></p>
+        <p>Category: <span className="fs-lg">{product_category}</span></p>
+      </div>
+      
       <div className="card">
-        <h2 className="fs-md">Pduct details</h2>
+        <h2 className="fs-md">Product details</h2>
         <div className="card-text">
-          <p>Date of Manufacture: {production_date}</p>
-          <p>Expiry Date {expiryDate === "expired" ? "expired" : `${expiryDate.years} years, ${expiryDate.months} months, and ${expiryDate.days} days`}</p>
-          <p>Shelf Life: {shelf_life}</p>
-          <p>Used Shelf Life: {used_shelf_life}</p>
-          <p>Remaining Shelf Life: {remaining_shelflife}</p>
+          <p className="m-1">Date of Manufacture: {production_date}</p>
+          <p className="m-1">Expiry Date {expiryDate === "expired" ? "expired" : `${expiryDate.years} years, ${expiryDate.months} months, and ${expiryDate.days} days`}</p>
+          <p className="m-1">Shelf Life: {shelf_life}</p>
+          <p className="m-1">Used Shelf Life: {used_shelf_life}</p>
+          <p className="m-1">Remaining Shelf Life: {remaining_shelflife}</p>
         </div>
       </div>
     </section>

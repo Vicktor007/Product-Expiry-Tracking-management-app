@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../utilities/Button";
+// import Button from "../utilities/Button";
 import SearchBar from "./SearchBar";
 export const ProductCanvas = styled.div`
   max-height: 356px;
@@ -37,12 +37,12 @@ export default function ProductList({
               key={product.id}
               onClick={() => handleProductClick(product)}
             >
-              {Product.first_name} {Product.last_name}
+              {product.product_name} {product.product_category}
             </ProductStyle>
           ))}
         </ul>
       </ProductCanvas>
-      <Button classes={"btn-accept btn-block"} text="Save" />
+      {/* <Button classes={"btn-accept btn-block"} text="Save" /> */}
     </section>
   );
 }

@@ -17,18 +17,18 @@ export default function Products() {
       .toLowerCase()
       .includes(searchProduct.toLowerCase())
   );
-  const displaySelectedProduct = (person) => {
-    setSelectedProduct(person);
+  const displaySelectedProduct = (product) => {
+    setSelectedProduct(product);
   };
   return (
     <PageWrapper className="animate-left">
-      <Title text="Product" />
+      <Title text="Products" />
       <div className="d-flex" style={{ gap: 30 }}>
         <ProductList
           // Product={ProductDetails}
           Product={filteredNames}
           searchName={searchName}
-          handlePersonClick={displaySelectedProduct}
+          handleProductClick={displaySelectedProduct}
         />
         {selectedProduct && <ProductDetails selectedProduct={selectedProduct} />}
       </div>
