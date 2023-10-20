@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 // routing
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ import Errorpage from './error-page';
 import Home from './routes/Home';
 import About from './routes/about';
 import Contact from './routes/contact';
-import Personnel from './routes/Personnel';
+import Products from './routes/Products';
 import Login from './routes/Login';
 
 // contexts
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
 
       {
         path: "personnel",
-        element: <Personnel/>
+        element: <Products/>
       },
 
       {

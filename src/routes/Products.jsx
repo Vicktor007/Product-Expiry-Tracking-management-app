@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { PageWrapper } from "../components/styles/PageWrapper";
 import Title from "../components/utilities/Title";
-import ProductList from "../components/product/ProductList";
-import data from "../db/personnel-data.json";
-import ProductDetails from "../components/product/ProductDetails";
-export default function Product() {
+import ProductList from "../components/products/ProductList";
+import data from "../db/product_data.json";
+import ProductDetails from "../components/products/ProductDetails";
+export default function Products() {
   // const [personneDetails, setProductDetails] = useState(data);
   const [searchProduct, setsearchProduct] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
