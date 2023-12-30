@@ -22,7 +22,6 @@ import AuthenticationProvider from './context/AuthenticationContext';
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <App/>
     element: <Root/>,
     errorElement: <Errorpage/>,
     children: [{
